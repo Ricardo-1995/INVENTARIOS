@@ -1,0 +1,58 @@
+<div style="text-align: center;">
+  <h2>INVENTARIOS LIVERPOOL</h2>
+  <button type="button" class="btn btn-success" (click)="open(content)">ALMACENAR NUEVO SKU</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>CANTIDAD</th>
+        <th>SKU</th>
+        <th>UBICACION</th>
+        <th>OPCIONES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of collection.data | paginate: config">
+        <td>{{item.id}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.apellido}}</td>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="openEditar(content,item)">Editar</button>
+          <button type="button" class="btn btn-danger" (click)="eliminar(item)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Estudiante create/update</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <form [formGroup]="estudianteForm">
+            <div class="form-group">
+              <label>CANTIDAD</label>
+              <input type="number" formControlName="id" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>SKU</label>
+              <input type="text" formControlName="nombre" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>UBICACION</label>
+              <input type="text" formControlName="apellido" class="form-control">
+            </div>
+          </form>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="guardarEstudiante()" *ngIf="!actualizar">Guardar</button>
+      <button type="button" class="btn btn-outline-dark" (click)="actualizarEstudiante()" *ngIf="actualizar">Actualizar</button>
+    </div>
+  </ng-template>
+</div>

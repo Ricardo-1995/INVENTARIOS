@@ -1,0 +1,75 @@
+[debug] [2020-12-22T08:45:33.995Z] ----------------------------------------------------------------------
+[debug] [2020-12-22T08:45:34.000Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\richy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-22T08:45:34.001Z] CLI Version:   9.1.0
+[debug] [2020-12-22T08:45:34.002Z] Platform:      win32
+[debug] [2020-12-22T08:45:34.002Z] Node Version:  v14.15.1
+[debug] [2020-12-22T08:45:34.005Z] Time:          Tue Dec 22 2020 02:45:34 GMT-0600 (hora estándar central)
+[debug] [2020-12-22T08:45:34.005Z] ----------------------------------------------------------------------
+[debug] [2020-12-22T08:45:34.006Z] 
+[debug] [2020-12-22T08:45:34.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-22T08:45:34.026Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\richy\tutorialfirebase
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using tutorialfirebase-c825d. 
+[debug] [2020-12-22T08:48:27.695Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-22T08:48:27.696Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-22T08:48:28.079Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 22 Dec 2020 08:48:28 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-22T08:48:28.151Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tutorialfirebase-c825d  
+ 
+[debug] [2020-12-22T08:48:28.436Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Dec 2020 08:48:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2020-12-22T08:48:44.151Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2020-12-22T08:48:47.416Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2020-12-22T08:48:47.417Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.1","browserURL":"https://www.gstatic.com/firebasejs/8.2.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.1/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\richy\tutorialfirebase is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1056813560&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-12-22T08:48:50.708Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"f587d382584e7bab1312","redirect_uri":"http://localhost:9005","state":"1056813560"}
+[debug] [2020-12-22T08:48:51.098Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 22 Dec 2020 08:48:51 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"c057ff31841c8a8040697b3622036c60\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"5FC5:7DAD:38798FD:4FA619F:5FE1B2F2"}
+[debug] [2020-12-22T08:48:51.101Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2020-12-22T08:48:51.652Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2020-12-22T08:48:51.653Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Ricardo-1995","id":53015501,"node_id":"MDQ6VXNlcjUzMDE1NTAx","avatar_url":"https://avatars1.githubusercontent.com/u/53015501?v=4","gravatar_id":"","url":"https://api.github.com/users/Ricardo-1995","html_url":"https://github.com/Ricardo-1995","followers_url":"https://api.github.com/users/Ricardo-1995/followers","following_url":"https://api.github.com/users/Ricardo-1995/following{/other_user}","gists_url":"https://api.github.com/users/Ricardo-1995/gists{/gist_id}","starred_url":"https://api.github.com/users/Ricardo-1995/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Ricardo-1995/subscriptions","organizations_url":"https://api.github.com/users/Ricardo-1995/orgs","repos_url":"https://api.github.com/users/Ricardo-1995/repos","events_url":"https://api.github.com/users/Ricardo-1995/events{/privacy}","received_events_url":"https://api.github.com/users/Ricardo-1995/received_events","type":"User","site_admin":false,"name":"RIcardo Perez Gonzalez","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2019-07-17T17:19:03Z","updated_at":"2020-12-19T00:56:51Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Ricardo-1995 
+[info] 
+[debug] [2020-12-22T08:49:24.833Z] >>> [apiv2][query] GET https://api.github.com/repos/INVENTARIOS/actions/secrets/public-key type=owner
+[debug] [2020-12-22T08:49:25.296Z] <<< [apiv2][status] GET https://api.github.com/repos/INVENTARIOS/actions/secrets/public-key 404
+[debug] [2020-12-22T08:49:25.296Z] <<< [apiv2][body] GET https://api.github.com/repos/INVENTARIOS/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-12-22T08:49:54.619Z] >>> [apiv2][query] GET https://api.github.com/repos/Ricardo-1995/INVERTARIOS/actions/secrets/public-key type=owner
+[debug] [2020-12-22T08:49:55.068Z] <<< [apiv2][status] GET https://api.github.com/repos/Ricardo-1995/INVERTARIOS/actions/secrets/public-key 404
+[debug] [2020-12-22T08:49:55.069Z] <<< [apiv2][body] GET https://api.github.com/repos/Ricardo-1995/INVERTARIOS/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
